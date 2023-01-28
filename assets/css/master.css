@@ -303,7 +303,7 @@
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     display: block !important;
-   height: 80vh;
+   height: 100vh;
     overflow-y: hidden;
   }
 
@@ -22284,7 +22284,7 @@ img {
 }
 .footer__top-wrapper-3 {
   padding: 0 50px;
-  height: 700px;
+  height: 850px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50% auto;
