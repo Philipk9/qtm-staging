@@ -327,8 +327,8 @@
   
 
   .modal-body {
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+    margin-left: 4%;
+    margin-right: 4%;
     margin-top: 7%;
   }
   
@@ -521,9 +521,9 @@
   padding-top: 120px;
 }
 @media only screen and (max-width: 767px) {
-  .pt-120 {
+  /* .pt-120 {
     padding-top: 60px;
-  }
+  } */
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .pt-120 {
@@ -22474,9 +22474,9 @@ img {
 .footer__logo {
   margin-bottom: 30px;
 }
-.footer__logo-3 img {
+/* .footer__logo-3 img {
   margin-bottom: 30px;
-}
+} */
 .footer__logo-3 p {
   max-width: 310px;
   color: var(--gray-2);
