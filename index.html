@@ -832,10 +832,13 @@
 
 
             <section id="myModal" class="modal">
+
+              <div class="closex">&times;</div>
 <section class="modal-body">
               <div class ="contact-send-message">Drop us a message. <br> we will get back to you shortly!</div>
               
             <div class="form">
+            
               <form id="myForm">
                 <div class="row">
                   <div class="col-sm-6">
@@ -856,7 +859,7 @@
                
                 <button type="button" class="footercta-secondary" id="close-contact-modal">CANCEL</button>
                 <button type="button" onclick= sendEmail() class="footercta-primary" id="submit">SEND MESSAGE</button>
-                <span class="close">&times;</span>
+                <!-- <span class="close">&times;</span> -->
               </section>
              
               </section>
@@ -894,10 +897,13 @@
           var btn = document.getElementById("open-contact-modal");
           
           // Get the <span> element that closes the modal
-          var span = document.getElementsByClassName("close")[0];
+          var span = document.getElementsByClassName("closex")[0];
 
           var cancel = document.getElementById("close-contact-modal");
+          var cancelx = document.getElementById("closexx");
+         
           
+         
           // When the user clicks the button, open the modal 
           btn.onclick = function() {
             modal.style.display = "block";
@@ -908,6 +914,10 @@
             modal.style.display = "none";
           }
           cancel.onclick = function() {
+            modal.style.display = "none";
+          }
+
+          cancelx.onclick = function() {
             modal.style.display = "none";
           }
           
