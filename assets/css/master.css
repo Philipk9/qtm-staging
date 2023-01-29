@@ -139,6 +139,7 @@
   line-height: 1.1;
   min-width: 820px;
   margin-bottom: 30px;
+  margin-top:30px;
 }
 
 .contact-send-message {
@@ -22393,7 +22394,7 @@ img {
 }
 .footer__top-wrapper-3 {
   padding: 0 50px;
-  height: 600px;
+  height: 700px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50% auto;
