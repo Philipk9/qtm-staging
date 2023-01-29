@@ -7453,6 +7453,8 @@ img {
 }
 .hero__inner-3 {
   position: relative;
+  margin-right: -30px;
+    margin-left: 21px;
 }
 .hero__inner-3 .scroll-down {
   margin-top: 100px;
@@ -7470,6 +7472,9 @@ img {
 @media only screen and (max-width: 767px) {
   .hero__inner-3 .scroll-down {
     display: none;
+  }
+  .hero__inner-3 {
+    margin-right: 20px;
   }
 }
 .hero__inner-3 .scroll-down button {
