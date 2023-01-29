@@ -298,7 +298,7 @@
     max-width: 240px;
   }
   .contact-modal {
-    margin-top: 80px;
+    margin-top: 100px;
     position: absolute;
     width: 100%;
     left: 0;
@@ -332,7 +332,7 @@
   .modal-body {
     margin-left: 4%;
     margin-right: 4%;
-    margin-top: 16%;
+    margin-top: 14%;
 
   }
   
