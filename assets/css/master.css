@@ -6112,6 +6112,7 @@ img {
 }
 .header__nav-icon-3 img {
   margin-top: -5px;
+  width: 24px;
 }
 .header__nav-icon-7 {
   display: -webkit-box;
@@ -6900,13 +6901,15 @@ img {
 .hero__area-3::after {
   position: absolute;
   content: "";
-  width: 50px;
-  height: 50px;
-  right: 50px;
-  top: 140px;
+  width: 70px;
+  height: 80px;
+  right: 36px;
+  top: 142px;
   background-image: url(../imgs/shape/6.png);
   background-repeat: no-repeat;
   background-position: right top;
+  background-size: contain;
+  opacity: 0.8;
 }
 .hero__area-3 .hero3-img {
   position: absolute;
