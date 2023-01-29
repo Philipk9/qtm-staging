@@ -97,11 +97,11 @@
 
 
   <!-- Go Top Button -->
-  <button id="scroll_top" class="scroll-top"><i class="fa-solid fa-arrow-up"></i></button>
+  <!-- <button id="scroll_top" class="scroll-top"><i class="fa-solid fa-arrow-up"></i></button> -->
 
 
   <!-- Header area start -->
-  <header class="header__area-3">
+  <header id = "navbar" class="header__area-3">
     <div class="header__inner-3">
       <div class="header__logo-2">
         <a href="index.html" class="logo-dark"><img class="logo-dark" src="assets/imgs/logo/logo-black.png" alt="Site Logo"></a>
@@ -240,7 +240,7 @@
               <li><a href="team-details.html">team details</a></li>
             </ul> -->
           </li>
-          <li><a href="blog.html">blog</a>
+          <li><a href="blog.html">Pricing</a>
             <!-- <ul class="main-dropdown">
               <li><a href="blog.html">blog</a></li>
               <li><a href="blog-2.html">blog v.2</a></li>
@@ -248,7 +248,7 @@
               <li><a href="blog-details.html">blog details</a></li>
             </ul> -->
           </li>
-          <li><a href="contact.html">contact</a></li>
+          <li><a href="#footer">contact us</a></li>
         </ul>
       </div>
       <div class="header__nav-icon-3">
@@ -298,7 +298,7 @@
           <nav class="offcanvas__menu">
             <ul class="menu-anim">
               
-              <li><a href="about.html">about</a></li>
+              <li><a href="about.html">Our work</a></li>
               <li>
                 <a>Service</a>
                 <ul>
@@ -457,7 +457,7 @@
                     <h3 class="sec-title title-right">TIONS</h3>
                   </div>
                   <div class="hero__text-3">
-                    <p class="hero__text-animation">A global digital agency focused on business transformation</p>
+                    <p class="hero__text-animation">A digital agency focused on business transformation</p>
                   </div>
                   <div class="scroll-down">
                     <button><img src="assets/imgs/icon/arrow-down-sm.png" alt="arrow icon"></button>
@@ -801,7 +801,7 @@
 
 
       <!-- Footer area start -->
-      <footer class=" footer__area-3">
+      <footer id="footer" class=" footer__area-3">
         <div class="footer__top-3 ">
           
           <div class=" footer__top-wrapper-3">
@@ -952,9 +952,9 @@
                 <div class="footer__nav-2">
                   <ul class="footer-menu-2 menu-anim">
                     <li><a href="about.html">about us</a></li>
-                    <li><a href="contact.html">contact</a></li>
-                    <li><a href="career.html">Career</a></li>
-                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="contact.html">Services</a></li>
+                    <li><a href="career.html">Pricing</a></li>
+                    <li><a href="faq.html">Contact us</a></li>
                   </ul>
                 </div>
               </div>
@@ -970,7 +970,26 @@
 
 
 
+
+<!-- Custom scripts -->
+
+<script type="text/javascript">
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+</script>
+
   <!-- All JS files -->
+
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
