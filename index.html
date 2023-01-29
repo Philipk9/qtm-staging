@@ -109,6 +109,7 @@
 
 
   <!-- Header area start -->
+  
   <header id = "navbar" class="header__area-3">
     <div class="header__inner-3">
       <div class="header__logo-2">
@@ -197,7 +198,7 @@
 
   <div id="smooth-wrapper">
     <div id="smooth-content">
-      <main>
+      <main >
 
         <!-- Hero area start -->
         <section class="hero__area-3">
@@ -592,6 +593,8 @@
               <div class="closex">&times;</div>
 <section class="modal-body">
               <div class ="contact-send-message">Drop us a message. <br> We will get back to you shortly!</div>
+              <div class="col-md-12" id = "successMessage"> <b>Thank you for your reaching out!</b> <br>Your message been received, will get back to you shortly.</div>
+
               
             <div class="form">
             
@@ -729,20 +732,63 @@
 
 <!-- Custom scripts -->
 
-<!-- <script type="text/javascript">
+<script type="text/javascript">
+function sendEmail() {
+  event.preventDefault();
+  var name = $("#name");
+  var email = $("#email");
+  var subject = $("#subject");
+  var message = $("#message");
 
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
+  if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(subject) && isNotEmpty(message)) {
+    $.ajax({
+      url: 'https://philip-karam-backend.herokuapp.com/send-email',
+      type: 'POST',
+      headers: {
+        'Accept': 'application/json',		
+		
+      },
+      data: {
+        name: name.val(),
+        email: email.val(),
+        subject: subject.val(),
+        message: message.val()
+      },
+
+
+	  
+      success: function (response) {
+        console.log(response);
+        if(response.success){
+          $('.success').text(response.message);
+          $('#myForm')[0].reset();
+        }
+      },
+      error: function (response) {
+        console.log(response);
+      }
+    });
+	
+	document.getElementById("successMessage").style.display = "block";
+	
 }
 
-</script> -->
+
+};
+
+
+        function isNotEmpty(caller) {
+            if (caller.val() == "") {
+                caller.css('border', '1px solid red');
+                return false;
+            } else
+                caller.css('border', '');
+
+            return true;
+        }
+
+
+</script>
 
   <!-- All JS files -->
 
