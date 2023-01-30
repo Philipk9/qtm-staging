@@ -185,6 +185,7 @@
   box-sizing: border-box;
   border-bottom: whitesmoke;
   margin-bottom: 20px;
+ 
 }
 
 .footercta-primary {
@@ -7068,8 +7069,8 @@ img {
 .hero__area-3::after {
   position: absolute;
   content: "";
-  width: 70px;
-  height: 60px;
+  width: 75px;
+  height: 75px;
   right: 176px;
   top: 132px;
   background-image: url(../imgs/shape/6.png);
@@ -7077,7 +7078,9 @@ img {
   background-position: right top;
   background-size: contain;
   opacity: 1;
+  
 }
+
 .hero__area-3 .hero3-img {
   position: absolute;
   bottom: 0;
@@ -7254,6 +7257,13 @@ img {
     top: -235px;
   }
 }
+
+
+
+
+
+
+
 .hero__area-3 .video {
   height: 100%;
   display: -webkit-box;
