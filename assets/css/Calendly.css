@@ -59,16 +59,17 @@
   }
 @media (max-width: 975px) {
 .calendly-overlay .calendly-popup {
-      position: relative;
-      top: 90px;
+      position: fixed;
+      /* top: 70px; */
       left: 0;
       right: 0;
       bottom: 0;
       transform: none;
       width: 100%;
-      height: 100%;
+      height: auto;
       min-width: 0;
       max-height: none
+
   }
     }
 .calendly-overlay .calendly-popup .calendly-popup-content {
