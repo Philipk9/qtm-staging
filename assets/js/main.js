@@ -977,7 +977,7 @@
       const itemSplitted = new SplitText(splitTextLine, { type: "words, lines" });
       gsap.set(splitTextLine, { perspective: 400 });
       itemSplitted.split({ type: "lines" })
-      tl.from(itemSplitted.lines, { duration: 1, delay: 0.3, opacity: 0, rotationX: -80, force3D: true, transformOrigin: "top center -50", stagger: 0.1 });
+      tl.from(itemSplitted.lines, { duration: 1, delay: 0.1, opacity: 0, rotationX: -80, force3D: true, transformOrigin: "top center -50", stagger: 0.1 });
     });
     /////////////////////////////////////////////////////
 

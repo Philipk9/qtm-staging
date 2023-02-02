@@ -737,7 +737,6 @@ body.modal {
   margin-bottom: 30px;
   margin-left: -170px;
   padding-left: 160px;
-  margin-top: 50px;
   min-height: 261px;
 
 }
@@ -769,11 +768,11 @@ body.modal {
   padding: 32px;
   margin-bottom: 30px;
   margin-left: 0;
-  padding-left: 12px;
   margin-right: -169px;
   margin-top: -460px;
   min-height: 287px;
   margin-left: -8px;
+  padding: 42px;
 
 }
 
@@ -885,7 +884,7 @@ body.modal {
 
 .sec-title-about { 
   margin-bottom: 22px;
-  margin-top: 200px;
+  margin-top: 210px;
   font-size: 35px;
     line-height: 1.2;
     margin-left: 0;
@@ -910,17 +909,17 @@ margin-right: 0px;
 
 .aboutus__left {
 
-  position: relative;
+  position: absolute;
    width: auto;
   padding-right: 0;
   pad: 0;
   padding-left: 0;
   margin-right: 0;
   margin-left: 0;
-
+/* margin-top: 230px; */
   width: auto;
   height: auto;
-  margin-bottom: -300px
+
 
 }
 
@@ -933,20 +932,19 @@ margin-right: 0px;
   margin-top: 200px;
   font-size: 35px;
     line-height: 1.2;
-    margin-left: 0;
 padding-left: 20px;
-margin-right: 0px;
+margin-right: -23px!important;
+margin-left: 8px!important;
     min-height: auto;
     width: auto;
 }
 
 .aboutus__right {
 
-  position: relative;
+  position: absolute;
    width: auto;
-  padding-right: 0;
-  pad: 0;
-  padding-left: 0;
+  padding-right: 0px !important;
+  padding-left:0px !important;
   margin-right: 0;
   margin-left: 0;
 
@@ -959,7 +957,7 @@ margin-right: 0px;
 
 .inline-margin{
 
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 
 
@@ -21768,7 +21766,7 @@ img {
 /*  35. PRICE CSS START
 /*----------------------------------------*/
 .price__area {
-  background-color: var(--pink-3);
+  background-color: #F2F2F2;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .price__area.pb-140 {
@@ -21812,7 +21810,10 @@ img {
   }
 }
 .price__item:first-child {
-  background-color: var(--black-2);
+  -webkit-box-shadow: 0 2px 8px rgb(229 232 232 / 75%);
+  box-shadow: 0 2px 8px rgb(229 232 232 / 75%);
+  border: 1px solid #e5e8e8;
+  background-color: #fff;
 }
 .price__item:first-child .price__icon span {
   color: var(--black-2);
