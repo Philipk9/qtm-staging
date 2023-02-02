@@ -209,6 +209,9 @@
  
 }
 
+
+
+
 .footercta-primary {
   background-color: white;
   color: #333333 !important;
@@ -1001,6 +1004,81 @@ margin-left: 8px!important;
   height: auto;
   object-fit: contain;
 }
+
+
+
+/* ////------------------Get A quot and Hamberuguer menue-----------------//// */
+
+
+.get-a-quot-cta-primary {
+  background-color: #333333;
+  color: white !important;
+  border-radius: 4px;
+  font-weight: medium;
+  font-size: 14px;
+  padding: 15px 20px 15px 20px;
+  
+  text-decoration: none !important;
+  min-width: 210px;
+  text-decoration: none;
+}
+
+
+  .get-a-quot-cta-primary-off-canvas {
+    background-color: white;
+    color: #333333 !important;
+    border-radius: 4px;
+    font-weight: medium;
+    font-size: 14px;
+    padding: 15px 20px 15px 20px;
+    
+    text-decoration: none !important;
+    min-width: 210px;
+    text-decoration: none;
+    margin-right: 5%;
+    margin-left: 5%;
+    min-width: 80%;
+    margin-top: 80%;
+
+
+}
+
+.menu-icon {
+  display: none;
+}
+
+
+/* //////////////Smaller laptops//////////// */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .menu-icon {
+    display: block;
+    margin-left: 30px;
+  }
+}
+
+
+/* //////////// Tablet //////////// */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .menu-icon {
+    display: block;
+    margin-left: 30px;
+  }
+}
+
+/* //////////////MObile ////////////////*/
+@media only screen and (max-width: 767px) {
+  .menu-icon {
+    display: block;
+    margin-left: 30px;
+  }
+  .get-a-quot-cta-primary {
+    display: none;
+
+  }
+  
+ 
+}
+
 
 /*----------------------------------------*/
 /*  03. SPACE CSS START
