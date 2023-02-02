@@ -680,8 +680,8 @@ body.modal {
   .breadcrumbCustom {
 
   
-    margin-top: -30px;
-      margin-bottom: 37px;
+    margin-top: 23px!important;
+      margin-bottom: 30px !important;
   
   }
 
@@ -736,7 +736,7 @@ body.modal {
   width: auto;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: -550px;
+  background-position-y: -150px;
 
 }
 
@@ -878,7 +878,22 @@ body.modal {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 40px;
+  height: 200px;
 
+}
+
+.subpageherotitle-services {
+  background-image:   url("../imgs/bg/Services-hero.jpg");
+  /* -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: saturate(.1); */
+  background-size: auto;
+  object-fit: contain
+;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 0px;
+  height: 200px;
 }
 
 
@@ -21789,7 +21804,7 @@ img {
 /*  35. PRICE CSS START
 /*----------------------------------------*/
 .price__area {
-  background-color: #F2F2F2;
+  background-color: #FCFCFC;
 }
 
 
@@ -21815,7 +21830,7 @@ img {
 }
 
 .price__table__first {
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 .price__item {
@@ -21844,7 +21859,7 @@ img {
   }
 
   .price__table__first {
-    margin-top: 70px;
+    margin-top: 50px;
   }
 }
 .price__item:first-child {
