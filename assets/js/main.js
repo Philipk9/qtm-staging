@@ -126,7 +126,14 @@
     }
   });
 
-
+/////////////-----------CTA EFFECT ------------//////////
+  
+// $(window).load(function(){
+//   $('.effect').each(function(){
+//     $(this).addClass('active');
+//   })
+//   $('.fader').addClass('active');
+// });
 
   /////////////////////////////////////////////////////
   // 01. Cursor Animations
