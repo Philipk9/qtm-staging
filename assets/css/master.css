@@ -1,11 +1,7 @@
 @charset "UTF-8";
 /*-----------------------------------------------------------------------------------
 
-  Theme Name: Axtra - Digital Agency HTML5 Template
-  Author: Crowdyflow
-  Support: habib.crowdyflow@gmail.com
-  Description: BUILDY – is a  Constructor HTML5 template that comes with high-quality 3 Pre build Home Pages and many built-in awesome inner pages  which are perfect for any creative agencies, designers, digital agencies, freelancers, developers, designers, marketing, startup, blog and portfolio.
-  Version: 1.0
+
 
 -----------------------------------------------------------------------------------
 
@@ -147,10 +143,10 @@
   overflow-x: hidden !important;
 }
 
-.modal-body {
+.modal-body-footer {
   margin-left: 2.5%;
   margin-right: 58.5%;
-  margin-top: 7%;
+  margin-top: 4%;
 }
 
 .contact-title {
@@ -375,7 +371,7 @@
   }
   
 
-  .modal-body {
+  .modal-body-footer {
     margin-left: 4%;
     margin-right: 4%;
     margin-top: 14%;
@@ -556,21 +552,21 @@ body.modal {
   overflow-y: hidden;
 }
 /* The Modal (background) */
-.modal {
+.modalfooter {
   display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
+  position: relative; /* Stay in place */
   z-index: 2222222; /* Sit on top */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  width: 100% !important; /* Full width */
+  height: 100%!important; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,1); /* Black w/ opacity */
   -webkit-animation-name: fadeIn; /* Fade in the background */
   -webkit-animation-duration: 0.4s;
   animation-name: fadeIn;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
 }
 
 /* Modal Content */
@@ -592,7 +588,7 @@ body.modal {
     font-size: 66px;
     font-weight: bold;
     position: relative;
-    top: 13%;
+    top: 4%;
     margin-right: 10%;
     text-shadow: 2px 2px black;
     cursor: pointer;
@@ -611,7 +607,7 @@ body.modal {
   color: white;
 }
 
-.modal-body {padding: 2px 16px;}
+/* .modal-body {padding: 2px 16px;} */
 
 .modal-footer {
   padding: 2px 16px;
@@ -663,6 +659,28 @@ body.modal {
 .breadcrumbCustomlink:hover {
   text-decoration: underline;
   color:black;
+}
+
+
+.breadcrumbCustom-reversed {
+
+  position: relative;
+  margin-right: 10%;
+  text-decoration: none;
+  color:white;
+  margin-top: -90px;
+    margin-bottom: 50px;
+
+}
+
+.breadcrumbCustomlink-reversed {
+  text-decoration: none;
+  color:white;
+}
+
+.breadcrumbCustomlink-reversed:hover {
+  text-decoration: underline;
+  color:white;
 }
 
 
@@ -23188,11 +23206,24 @@ img {
 .footer__top-wrapper-3 {
   padding: 0 50px;
   height: 700px;
-  display: -ms-grid;
-  display: grid;
+  /* display: -ms-grid; */
+  /* display: grid; */
   -ms-grid-columns: 50% 50% auto;
   grid-template-columns: 50% 50%;
 }
+
+.footer__top-wrapper-3-work {
+  padding: 0 200px;
+  height: 850px;
+  /* display: -ms-grid; */
+  /* display: grid; */
+  -ms-grid-columns: 50% 50% auto;
+  grid-template-columns: 50% 50%;
+  padding-top: 5%;
+}
+
+
+
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .footer__top-wrapper-3 {

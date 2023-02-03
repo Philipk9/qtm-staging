@@ -128,12 +128,7 @@
 
 /////////////-----------CTA EFFECT ------------//////////
   
-// $(window).load(function(){
-//   $('.effect').each(function(){
-//     $(this).addClass('active');
-//   })
-//   $('.fader').addClass('active');
-// });
+
 
   /////////////////////////////////////////////////////
   // 01. Cursor Animations
@@ -950,17 +945,17 @@
 
     /////////////////////////////////////////////////////
     // 24. Portfolio 5 Animation 
-    // let skewSetter = gsap.quickTo(".portfolio__item-5 img", "skewY"),
-    //   clamp = gsap.utils.clamp(-15, 15);
-    // const smoother = ScrollSmoother.create({
-    //   smooth:1 ,
-    //   effects: device_width < 1025 ? false : true,
-    //   smoothTouch: false,
-    //   normalizeScroll: false,
-    //   ignoreMobileResize: true,
-    //   onUpdate: self => skewSetter(clamp(self.getVelocity() / -80)),
-    //   onStop: () => skewSetter(0)
-    // });
+    let skewSetter = gsap.quickTo(".portfolio__item-5 img", "skewY"),
+      clamp = gsap.utils.clamp(-15, 15);
+    const smoother = ScrollSmoother.create({
+      smooth:1 ,
+      effects: device_width < 1025 ? false : true,
+      smoothTouch: false,
+      normalizeScroll: false,
+      ignoreMobileResize: true,
+      onUpdate: self => skewSetter(clamp(self.getVelocity() / -80)),
+      onStop: () => skewSetter(0)
+    });
 
     /////////////////////////////////////////////////////
 
