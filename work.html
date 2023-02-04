@@ -350,31 +350,75 @@
 
       </main>
 
-      <!-- Footer area start -->
-      <footer id="footer" class=" footer__area-3">
-        <div class="footer__top-3 ">
+    
+  <!-- ---------Send a message Modal start --------- -->
+  <section id="myModal" class="modalfooter footer__area-3 col-xxl-12 ">
+
+    <div class="closex">&times;</div>
+<section class="modal-body-footer">
+    <div class ="contact-send-message">Drop us a message. <br> We will get back to you shortly!</div>
+    <div class="col-md-12" id = "successMessage"> <b>Thank you for your reaching out!</b> <br>Your message has been received, will get back to you shortly.</div>
+
+    
+  <div class="form">
+  
+    <form id="myForm">
+      <div class="row">
+        <div class="col-sm-6">
+          <input class = "newinput newtextares" id="name" type="text" name="name" placeholder="Name">
+        </div>
+        <div class="col-sm-6">
+          <input class = "newinput newtextares" id="email" type="email" name="email" placeholder="Email">
+        </div>
+      </div>
+      <input class = "newinput newtextares" id="subject" type="text" name="subject" placeholder="Subject">
+      <textarea class = "messagetextarea newinput newtextares" id="message" name="message" placeholder="Message"></textarea>
+    
+
+      
+    </form>
+  
+  </div>
+     
+      <button type="button" class="footercta-secondary" id="close-contact-modal">CANCEL</button>
+      <button type="button" onclick= sendEmail() class="footercta-primary" id="submit">SEND MESSAGE</button>
+      <!-- <span class="close">&times;</span> -->
+    </section>
+   
+    </section>
+
+
+    <!-- ---------Send a message Modal end --------- -->
+
+
+    <!-- Footer area start -->
+    <footer id="footer" class=" footer__area-3">
+
+
+
+      <div class="footer__top-3 ">
+        
+        
+        <div class=" footer__top-wrapper-3-work">
           
-          <div class=" footer__top-wrapper-3-work">
-            
-            
-            
-            <div id = "lovetohear" class="footer__logo-3 col-xxl-10  pt-120">
-
-              
-              <div >
-                <div class ="contact-title">We would love <br>to hear from you</div>
-              </div>
-              <div class ="contact-subtitle">Book a free consultation</div>
-              
-              <p class = "footer-body-copy">When do they work well, and when do they on us and finally, when do we actually need how can we avoid
-                them.</p>
-                <button id ="open-contact-modal" type="submit" class="footercta-secondary ">DROP US A MESSAGE</button>
-            
-                <button class = "footercta-primary" style =  "margin-top: 30px" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/philipkaram/30min?hide_gdpr_banner=1&background_color=333333&text_color=ffffff&primary_color=ffffff'});return false;">BOOK FREE CONSULTATION</button>
-               
+      
+     
+          
+          <div id = "lovetohear" class="footer__logo-3 col-xxl-10  pt-120">
+            <div >
+              <div class ="contact-title">We would love <br>to hear from you</div>
             </div>
-
+            <div class ="contact-subtitle">Book a free consultation</div>
             
+            <p class = "footer-body-copy">When do they work well, and when do they on us and finally, when do we actually need how can we avoid
+              them.</p>
+              <button id ="open-contact-modal" type="submit" class="footercta-secondary ">DROP US A MESSAGE</button>
+          
+              <button class = "footercta-primary" style =  "margin-top: 30px" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/philipkaram/30min?hide_gdpr_banner=1&background_color=333333&text_color=ffffff&primary_color=ffffff'});return false;">BOOK FREE CONSULTATION</button>
+             
+          </div>
+
+          
 
 <!-- Calendly link widget begin -->
 <link href="./assets/css/Calendly.css" rel="stylesheet">
@@ -383,128 +427,95 @@
 <!-- Calendly link widget end -->
 
 
-            <section id="myModal" class="modalfooter footer__area-3 col-xxl-12 ">
 
-              <div class="closex">&times;</div>
-<section class="modal-body-footer">
-              <div class ="contact-send-message">Drop us a message. <br> We will get back to you shortly!</div>
-              <div class="col-md-12" id = "successMessage"> <b>Thank you for your reaching out!</b> <br>Your message has been received, will get back to you shortly.</div>
-
-              
-            <div class="form">
-            
-              <form id="myForm">
-                <div class="row">
-                  <div class="col-sm-6">
-                    <input class = "newinput newtextares" id="name" type="text" name="name" placeholder="Name">
-                  </div>
-                  <div class="col-sm-6">
-                    <input class = "newinput newtextares" id="email" type="email" name="email" placeholder="Email">
-                  </div>
-                </div>
-                <input class = "newinput newtextares" id="subject" type="text" name="subject" placeholder="Subject">
-                <textarea class = "messagetextarea newinput newtextares" id="message" name="message" placeholder="Message"></textarea>
-              
-
-                
-              </form>
-            
-            </div>
-               
-                <button type="button" class="footercta-secondary" id="close-contact-modal">CANCEL</button>
-                <button type="button" onclick= sendEmail() class="footercta-primary" id="submit">SEND MESSAGE</button>
-                <!-- <span class="close">&times;</span> -->
-              </section>
-             
-              </section>
 <!-- 
-         //////  Slide Modal box  ///// -->
+       //////  Slide Modal box  ///// -->
 
-  
 
-         <script>
-          // Get the modal
-          var modal = document.getElementById("myModal");
 
-           // Get the modal
-           var lovetohear = document.getElementById("lovetohear");
-          
-          // Get the button that opens the modal
-          var btn = document.getElementById("open-contact-modal");
-          
-          // Get the <span> element that closes the modal
-          var span = document.getElementsByClassName("closex")[0];
+       <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
 
-          var cancel = document.getElementById("close-contact-modal");
-          var cancelx = document.getElementById("closexx");
-         
-          
-         
-          // When the user clicks the button, open the modal 
-          btn.onclick = function() {
-            modal.style.display = "block";
-            lovetohear.style.display = "none";
+         // Get the modal
+         var lovetohear = document.getElementById("lovetohear");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("open-contact-modal");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("closex")[0];
 
-          }
-          
-          // When the user clicks on <span> (x), close the modal
-          span.onclick = function() {
+        var cancel = document.getElementById("close-contact-modal");
+        var cancelx = document.getElementById("closexx");
+       
+        
+       
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+          lovetohear.style.display = "none";
+
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+          lovetohear.style.display = "block";
+        }
+        cancel.onclick = function() {
+          modal.style.display = "none";
+          lovetohear.style.display = "block";
+        }
+
+        cancelx.onclick = function() {
+          modal.style.display = "none";
+          lovetohear.style.display = "block";
+        }
+        
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
             modal.style.display = "none";
-            lovetohear.style.display = "block";
           }
-          cancel.onclick = function() {
-            modal.style.display = "none";
-            lovetohear.style.display = "block";
-          }
+        }
+        </script>
 
-          cancelx.onclick = function() {
-            modal.style.display = "none";
-            lovetohear.style.display = "block";
-          }
-          
-
-          // When the user clicks anywhere outside of the modal, close it
-          window.onclick = function(event) {
-            if (event.target == modal) {
-              modal.style.display = "none";
-            }
-          }
-          </script>
-
-         <!-- ///////// Slide modal box ends -->
-           
-
-  
-
+       <!-- ///////// Slide modal box ends -->
          
-          </div>
+
+
+
+       
         </div>
+      </div>
 
-        <div class="footer__btm-3">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-xxl-4 col-xl-4 col-lg-4">
-                <!-- <div class="footer__copyright-3">
-                  <p>© 2022 - 2025 | Alrights reserved by <a href="https://wealcoder.com/" target="_blank">Wealcoder</a>
-                  </p>
-                </div> -->
+      <div class="footer__btm-3">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xxl-4 col-xl-4 col-lg-4">
+              <div class="footer__copyright-3">
+                <p style ="font-weight: normal;">© 2023 | Alrights reserved
+                </p>
               </div>
-              <div class="col-xxl-8 col-xl-8 col-lg-8">
-                <div class="footer__nav-2">
-                  <ul class="footer-menu-2 menu-anim">
-                    <li><a href="AboutUs.html">About us</a></li>
-                    <li><a href="contact.html">Services</a></li>
-                    <li><a href="work.html">Work</a></li>
-                    <li><a href="faq.html">Contact us</a></li>
-                  </ul>
-                </div>
+            </div>
+            <div class="col-xxl-8 col-xl-8 col-lg-8">
+              <div class="footer__nav-2">
+                <ul class="footer-menu-2 menu-anim">
+                  <li><a href="AboutUs.html">About us</a></li>
+                  <li><a href="contact.html">Services</a></li>
+                  <li><a href="work.html">Work</a></li>
+                  <li><a href="contact.html">Contact us</a></li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-      <!-- Footer area end -->
- 
+      </div>
+    </footer>
+    <!-- Footer area end -->
+
 
 
     </div>
