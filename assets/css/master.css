@@ -647,6 +647,7 @@
     -webkit-animation-duration: 0.4s;
     animation-name: fadeIn;
     animation-duration: 0.4s;
+    top:0
   }
 
 }
