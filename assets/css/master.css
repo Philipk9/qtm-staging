@@ -2032,9 +2032,25 @@ img {
 }
 .logo-dark {
   display: block;
-  height: 50px;
-
+  height: 38px;
+  margin-top: 7px;
+  margin-bottom: 23px;
   background-image: cover;
+  margin-left: 40px;
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  .logo-dark {
+    display: block;
+    height: 30px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    background-image: cover;
+    margin-left: 3px;
+  
+  }
 }
 
 .font-20 {
@@ -4316,7 +4332,8 @@ img {
 }
 .main-menu-3 {
   text-align: center;
-  margin-top:4px;
+  margin-top:10px;
+  margin-bottom: -10px;
 }
 @media only screen and (max-width: 767px) {
   .main-menu-3 {
@@ -6905,7 +6922,7 @@ img {
   }
 }
 .header__inner-3 {
-  padding: 5px 50px;
+  padding: 5px 35px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .header__inner-3 {
