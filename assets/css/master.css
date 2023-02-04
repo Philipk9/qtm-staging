@@ -1116,7 +1116,7 @@ margin-left: 8px!important;
   transition: 1s;
   box-shadow: 6px 6px 0 #484848;
   transform: skewX(-15deg);
-  position: fixed;
+  position: fixed !important;
   top:100px;
   right:140px;
 }
