@@ -1241,7 +1241,7 @@ span.cta-anim:nth-child(2) {
 
  .cta-testt {
   
-  padding: 13px 0px 8px 38px !important;
+  padding: 15px 0px 8px 38px !important;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   font-size: 25px !important;
@@ -1254,11 +1254,11 @@ span.cta-anim:nth-child(2) {
   position: relative !important;
   /* margin-left: 170px; */
   text-align: center;
-  display: inline-block !important;
+  display: block !important;
   top: 22px !important;
-  min-width: 94%;
+  min-width: 97%;
   margin-right: 1% !important;
-  margin-left: 1% !important;
+  margin-left: -1% !important;
 }
 
 
