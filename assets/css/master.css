@@ -381,6 +381,7 @@
     width: 100%;
 
   }
+
   .footercta-secondary {
     margin-right: 0;
     margin-left: 0%;
@@ -395,7 +396,8 @@
     margin-top: 40px;
     width: 100%;
     
-
+  }
+  
   .footer-body-copy {
     min-width: 340px !important;
   }
