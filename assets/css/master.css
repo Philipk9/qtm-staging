@@ -1174,7 +1174,7 @@ span.cta-anim:nth-child(2) {
   box-shadow: 6px 6px 0 #484848;
   transform: skewX(-15deg);
   position: fixed;
-  top: 600px;
+  top: 500px;
   /* right: 140px; */
   margin-right: 12%;
   margin-left: 10%;
