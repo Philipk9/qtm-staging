@@ -929,8 +929,8 @@
 }
 
 .subpageherotitle-about {
-  background-image:   url("../imgs/bg/Aboutushero.jpg");
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  background-image: url(../imgs/bg/Aboutushero.jpg);
+  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   filter: saturate(.1);
   background-size: auto;
@@ -938,7 +938,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 40px;
-  height: 200px;
+  height: 760px;
+  background-position-x: -150px;
 
 }
 
@@ -969,7 +970,7 @@
   width: auto;
   position: relative;
   text-align: center;
-  padding-top: 34px;
+  padding-top: 53px;
 }
 
 
@@ -23327,6 +23328,15 @@ img {
 .footer__area-3 {
   background-color: var(--black-2);
 }
+
+.footer__area-contact {
+  background-color: white;
+  margin-bottom: 0px;
+  height: 100vh;
+}
+
+
+
 .footer__row {
   margin-left: -500px;
 }
@@ -23531,7 +23541,7 @@ img {
 }
 @media only screen and (max-width: 767px) {
   .footer__btm-3 {
-    padding: 10px 10px 30px 10px;
+    padding: 26px 10px 30px 10px;
   }
   .footer__btm-3 .row {
     -webkit-box-orient: vertical;
