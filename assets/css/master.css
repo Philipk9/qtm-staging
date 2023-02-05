@@ -731,6 +731,7 @@
   color:black;
   margin-top: -90px;
     margin-bottom: 50px;
+    display: none;
 
 }
 
@@ -783,7 +784,7 @@
 
   .breadcrumbCustom {
 
-  
+    display: block;
     margin-top: 23px!important;
       margin-bottom: 30px !important;
   
@@ -1948,7 +1949,7 @@ img {
   left: 0;
   background: var(--white-4);
 }
-.line::after {
+/* .line::after {
   position: absolute;
   content: "";
   width: 1px;
@@ -1956,7 +1957,7 @@ img {
   left: calc(50% - 1px);
   top: 0;
   background: var(--white-4);
-}
+} */
 .line-3 {
   position: absolute;
   content: "";
