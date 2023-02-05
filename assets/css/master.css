@@ -14240,14 +14240,14 @@ img {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .portfolio__detail-top .sec-title {
     font-size: 72px;
-    padding-top: 90px;
+    padding-top: 30px;
   }
 }
 @media only screen and (max-width: 767px) {
   .portfolio__detail-top .sec-title {
     font-size: 60px;
     padding-bottom: 50px;
-    padding-top: 90px;
+    padding-top: 30px;
   }
 }
 .portfolio__detail-info {
