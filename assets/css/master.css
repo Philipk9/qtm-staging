@@ -123,6 +123,19 @@
 /*  New form
 /*----------------------------------------*/
 
+
+  .animated-gradient {
+    animation: animateBg 3s linear infinite;
+    background-image: linear-gradient(135deg,#e56699,#bb00ff,#db5779,#e56699,#bb00ff);
+    background-size: 400% 100%;
+  }
+  @keyframes animateBg {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 0%; }
+  }
+  
+
+
 .buttonC {
   color: white;
 }
@@ -7867,10 +7880,9 @@ img {
   position: absolute;
   bottom: 0;
   right: 0;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
+ 
   width: 900px;
-  height: 300px;
+  height: 330px;
   background-size: cover;
   object-fit: cover;
 }
@@ -7897,6 +7909,8 @@ img {
 @media only screen and (max-width: 767px) {
   .hero__area-3 .hero3-img {
     position: unset;
+    width: 100%;
+    
   }
 
 
@@ -7931,13 +7945,16 @@ img {
 .hero__area-3 .sec-sub-title {
   font-size: 24px;
   font-weight: 600;
-  color: var(--black-2);
+  color: white;
   position: relative;
   display: inline-block;
   padding-right: 30px;
-  padding-bottom: 0px;
+  padding-bottom: -8px !important;
   text-transform: uppercase;
   z-index: 2;
+  padding-left: 24px;
+  padding-top: 5px;
+  transform: skewX(-15deg);
   
 }
 @media only screen and (max-width: 767px) {
@@ -7950,8 +7967,7 @@ img {
   content: "";
   width: 90px;
   height: 1px;
-  left: 100%;
-  top: 12px;
+  top: 15px;
   background-color: var(--black-2);
 }
 .hero__area-3 .sec-title {

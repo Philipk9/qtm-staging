@@ -1178,7 +1178,7 @@
   const video_start = document.querySelector(".hero__area-3");
 
   if (radio_buttons) {
-    radio_buttons.addEventListener('click', function () {
+    radio_buttons.addEventListener('mouseover', function () {
       let video = document.querySelector(".video-title")
       let videoClose = document.querySelector(".video-title.close-video-title")
       if (radio_buttons.checked) {
