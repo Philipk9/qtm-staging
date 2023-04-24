@@ -1434,23 +1434,23 @@
 
   /////////////////////////////////////////////////////
   // 40. Portfolio Slider 3
-  var portfolio_slider_3 = new Swiper(".portfolio__slider-3", {
-    speed: 1500,
-    loop: true,
-    effect: 'fade',
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      type: "fraction",
-    },
-    navigation: {
-      nextEl: ".pp-next",
-      prevEl: ".pp-prev",
-    },
-  });
+  // var portfolio_slider_3 = new Swiper(".portfolio__slider-3", {
+  //   speed: 1500,
+  //   loop: true,
+  //   effect: 'fade',
+  //   autoplay: {
+  //     delay: 5000,
+  //     disableOnInteraction: false
+  //   },
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //     type: "fraction",
+  //   },
+  //   navigation: {
+  //     nextEl: ".pp-next",
+  //     prevEl: ".pp-prev",
+  //   },
+  // });
   /////////////////////////////////////////////////////
 
 
